@@ -11,15 +11,13 @@
       <h1>Keyobard  Events</h1>
       <div class="name-input">
         <label for="name">Name:</label>
-        <input type="text" name="name" v-on:keyup.enter="logName">
+        <input type="text" name="name" v-model="name">
+        {{name}}
       </div>
       <div class="job-input">
         <label for="job">Job:</label>
-        <input type="text" name="job" v-on:keyup.enter="logJob">
-      </div>
-      <div class="job-input">
-        <label for="job">Using Alt and Enter in Keyboard:</label>
-        <input type="text" name="job" v-on:keyup.alt.enter="logJob">
+        <input type="text" name="job" v-model="job">
+        {{job}}
       </div>
     </div>
     <script src="js/app.js"></script>
