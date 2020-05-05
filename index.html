@@ -8,17 +8,13 @@
   </head>
   <body>
     <div id="first-vue-app">
-      <h1>Keyobard  Events</h1>
-      <div class="name-input">
-        <label for="name">Name:</label>
-        <input type="text" name="name" v-model="name">
-        {{name}}
-      </div>
-      <div class="job-input">
-        <label for="job">Job:</label>
-        <input type="text" name="job" v-model="job">
-        {{job}}
-      </div>
+      <h1>Computed Properties</h1>
+      <button type="button" name="button" v-on:click="A++">Add to A</button>
+      <button type="button" name="button" v-on:click="B++">Add to B</button>
+      <p>A-{{A}}</p>
+      <p>B-{{B}}</p>
+      <p>Age+A={{addA}}</p>
+      <p>Age+B={{addB}}</p>
     </div>
     <script src="js/app.js"></script>
   </body>
