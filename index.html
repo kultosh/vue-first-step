@@ -9,9 +9,10 @@
   <body>
     <div id="first-vue-app">
       <h1>Events</h1>
-      <div id="canvas" v-on:mousemove="updateXY">
-        {{x}},{{y}}
-      </div>
+      <button type="button" name="button" v-on:click.once="add(1)">Add Age</button>
+      <button type="button" name="button" v-on:click="subtract(1)">Subtract Age</button>
+      <p>She is {{age}} years old.</p>
+      <p> <a v-on:click.prevent="click" href="https://vuejs.org/">Vue JS</a> </p>
     </div>
     <script src="js/app.js"></script>
   </body>

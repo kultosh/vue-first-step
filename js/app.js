@@ -2,13 +2,16 @@ new Vue ({
 	el: '#first-vue-app',
 	data: {
 		age: 18,
-		x: 0,
-		y:0,
 	},
 	methods: {
-		updateXY:function(event){
-			this.x = event.offsetX;
-			this.y = event.offsetY;
+		add:function(inc){
+			this.age += inc;
+		},
+		subtract:function(dec){
+			this.age -= dec;
+		},
+		click:function(){
+			alert('Are You Sure?')
 		}
 	}
 })
