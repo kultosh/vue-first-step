@@ -8,19 +8,10 @@
   </head>
   <body>
     <div id="first-vue-app">
-      <h1>{{greet('Morning')}}</h1>
-      <i> <a v-bind:href="website">Vue Js</a> </i>
-      <br>
-      <!-- Also can be written in shortcut for binding the link as -->
-      <i> <a :href="website">Second Method</a> </i>
-
-      <div class="input-value-data-bind">
-        <input type="text" name="" :value="job">
-      </div>
-      
-      <p v-html="websiteTag"></p>
-      <p>Fullname: {{firstname}} {{lastname}}</p>
-      <p>Job: {{job}}</p>
+      <h1>Events</h1>
+      <button type="button" name="add-button" v-on:click="age++">Add Age</button>
+      <button type="button" name="subtract-button" v-on:click="age--">Subtract Age</button>
+      <p>She is {{age}} years old.</p>
     </div>
     <script src="js/app.js"></script>
   </body>
