@@ -1,6 +1,5 @@
-#canvas{
-  width: 600px;
-  padding: 200px 20px;
+h1{
   text-align: center;
-  border: 1px solid #333;
+  font-style: oblique;
+  color: #645555;
 }
