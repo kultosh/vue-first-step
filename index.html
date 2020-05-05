@@ -9,8 +9,13 @@
   <body>
     <div id="first-vue-app">
       <h1>Events</h1>
-      <button type="button" name="add-button" v-on:click="add">Add Age</button>
-      <button type="button" name="subtract-button" v-on:click="subtract">Subtract Age</button>
+      <button type="button" name="add-button" v-on:click="add(1)">Add Age</button>
+      <button type="button" name="subtract-button" v-on:click="subtract(1)">Subtract Age</button>
+
+      <!-- Note @ is the optional for v-on: events -->
+
+      <button type="button" name="add-year" @dblclick="add(10)">Add 10 Years</button>
+      <button type="button" name="subtract-year" @dblclick="subtract(10)">Subtract 10 Years</button>
       <p>She is {{age}} years old.</p>
     </div>
     <script src="js/app.js"></script>
