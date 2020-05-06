@@ -8,13 +8,19 @@
   </head>
   <body>
     <div id="first-vue-app">
-      <h1>Computed Properties</h1>
-      <button type="button" name="button" v-on:click="A++">Add to A</button>
-      <button type="button" name="button" v-on:click="B++">Add to B</button>
-      <p>A-{{A}}</p>
-      <p>B-{{B}}</p>
-      <p>Age+A={{addA}}</p>
-      <p>Age+B={{addB}}</p>
+      <h1>Dynamic CSS Classes</h1>
+      <div id="content">
+        <h2>Example1:</h2>
+        <div v-bind:class="{available}" v-on:click="available =! available">
+          <span>Red</span>
+        </div>
+        <h2>Example2:</h2>
+        <button type="button" name="button" @click="available =! available">ToggleColor</button>
+        <button type="button" name="button" @click="nearby =! nearby">ToggleNearby</button>
+        <div v-bind:class="compClasses">
+          <span>Red</span>
+        </div>
+      </div>
     </div>
     <script src="js/app.js"></script>
   </body>

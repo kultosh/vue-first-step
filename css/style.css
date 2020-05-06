@@ -3,3 +3,24 @@ h1{
   font-style: oblique;
   color: #645555;
 }
+
+#content{
+  margin-left: 25%;
+}
+
+span{
+  background: red;
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.available span{
+  background: green;
+}
+
+.nearby span:after{
+  content: "nearby";
+  margin-left: 10px;
+}
