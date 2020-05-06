@@ -1,18 +1,13 @@
 new Vue ({
 	el: '#first-vue-app',
 	data: {
-		available: true,
-		nearby: false,
+		error: true,
+		success: false,
 	},
 	methods: {
 
 	},
 	computed: {
-		compClasses:function(){
-			return {
-				 available: this.available,
-				 nearby: this.nearby,
-			 };
-		}
+
 	}
 })
