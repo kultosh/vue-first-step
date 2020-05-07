@@ -10,7 +10,7 @@
     <div id="first-vue-app">
       <!-- <h1>Punching Bag Game</h1> -->
       <!-- bag-image -->
-      <div id="bag" v-bind:class="bagBlast">
+      <div id="bag" v-bind:class="{burst:ended}">
 
       </div>
       <!-- bag-health -->
@@ -20,7 +20,7 @@
       </div>
       <!-- game-controls -->
       <div id="controls">
-        <button type="button" name="button" v-on:click="punch" v-if="health != 0">Punch</button>
+        <button type="button" name="button" v-on:click="punch" v-if="!ended">Punch</button>
         <button type="button" name="button" v-on:click="restart">Restart</button>
       </div>
     </div>
