@@ -1,8 +1,4 @@
-h1{
-  text-align: center;
-  font-style: oblique;
-  color: #645555;
-}
+
 
 #bag{
   width: 200px;
@@ -30,6 +26,22 @@ h1{
 }
 
 #controls{
-  width: 160px;
+  width: 218px;
   margin: 0 auto;
+}
+
+.win{
+  color: green;
+}
+
+.loose{
+  color: red;
+}
+
+.playagain::after{
+  content: "Play Again";
+}
+
+.restart::after{
+  content: "Restart";
 }
