@@ -15,7 +15,7 @@ new Vue ({
 	computed: {
 		bagBlast:function(){
 		if(this.health == 0){
-			return {bagblast: this.brust = true};
+			return {brust: this.brust = true};
 		}
 		}
 	}
