@@ -8,16 +8,42 @@
   </head>
   <body>
     <div id="first-vue-app">
-      <h1>Conditional</h1>
+      <h1>Looping for list</h1>
       <div id="content">
-        <button type="button" name="button" @click="error =! error">Toggle Error</button>
-        <button type="button" name="success" @click="success =! success">Toggle Success</button>
-        <p v-if="error">Error</p>
-        <p v-else-if="success">Success</p>
-        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - -->
-        <!-- Create the style and doesnt take element out of the DOM -->
-        <!-- <p v-show="error">Error</p>
-        <p v-show="success">Success</p> -->
+        <div class="example-1">
+          <h2>Using List</h2>
+          <ul>
+            <li v-for="hero in characters">{{hero}}</li>
+          </ul>
+          <ul>
+            <li v-for="actor in actors">{{actor.name}} - {{actor.age}}</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="example-2">
+          <h2>Using Template</h2>
+          <template v-for="(hero,index) in characters">
+            <h3>{{index}}. {{hero}}</h3>
+          </template>
+          <template v-for="actor in actors">
+            <h3>{{actor.name}} - {{actor.age}}</h3>
+          </template>
+        </div>
+        <hr>
+        <div class="example-3">
+          <h2>Using Key & Value</h2>
+          <template v-for="actor in actors">
+            <h4 v-for="(val,key) in actor">{{key}} - {{val}}</h4>
+          </template>
+        </div>
+        <hr>
+        <div class="example-4">
+          <h2>Using loop & condition</h2>
+          <template v-for="actor in actors" v-if="actor.age==45">
+            <h4>{{actor.name}}</h4>
+          </template>
+          <span v-for="n in 10">{{ n }} </span>
+        </div>
       </div>
     </div>
     <script src="js/app.js"></script>
