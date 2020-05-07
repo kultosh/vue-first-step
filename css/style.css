@@ -4,28 +4,32 @@ h1{
   color: #645555;
 }
 
-#content{
-  margin-left: 25%;
+#bag{
+  width: 200px;
+  height: 500px;
+  margin: 0 auto;
+  background: url(/image/bag.png) center no-repeat;
+  background-size: 80%;
 }
 
-hr{
-  width: 70%;
-  margin-left:0;
+#bag.brust{
+  background: url(/image/bag-burst.png) center no-repeat;
+  background-size: 80%;
 }
 
-span{
-  background: red;
-  display: inline-block;
-  padding: 10px;
-  color: #fff;
-  margin: 10px 0;
+#bag-health{
+  width: 200px;
+  border: 2px solid #000;
+  margin: 0 auto 20px auto;
+  background-color: crimson;
 }
 
-.available span{
+#bag-health div{
+  height: 20px;
   background: green;
 }
 
-.nearby span:after{
-  content: "nearby";
-  margin-left: 10px;
+#controls{
+  width: 160px;
+  margin: 0 auto;
 }
