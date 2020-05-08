@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <h1>Multiple Instance</h1>
+    <div id="vue-instance-first">
+      <h2><u>{{title}}</u> </h2>
+      <p>{{greet}}</p>
+    </div>
+    <div id="vue-instance-second">
+      <h2><u>{{title}}</u> </h2>
+      <p>{{greet}}</p>
+      <button type="button" name="button" v-on:click="changeTitle">Change Title</button>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

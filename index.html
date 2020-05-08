@@ -8,23 +8,7 @@
   </head>
   <body>
     <div id="first-vue-app">
-      <!-- bag-image -->
-      <div id="bag" v-bind:class="{burst:ended}">
-
-      </div>
-      <!-- bag-health -->
-      <div id="bag-health">
-        <div v-bind:style="{width: health + '%'}">
-        </div>
-      </div>
-      <!-- game-controls -->
-      <div id="controls">
-        <span v-bind:class="{win:ended, loose:loose}">{{stat}}</span>
-        <button type="button" name="button" v-on:click="restart" v-if="loose || ended" v-bind:class="{playagain:ended, restart:loose}"></button>
-        <button type="button" name="button" v-on:click="punch" v-if="!loose && !ended">Punch</button>
-        <button type="button" name="button" v-on:click="kick" v-if="!loose && !ended">Kick</button>
-        <button type="button" name="button" v-on:click="jab" v-if="!loose && !ended">Jab</button>
-      </div>
+      <h1>Vue Js Learn</h1>
     </div>
     <script src="js/app.js"></script>
   </body>
